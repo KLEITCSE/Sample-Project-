@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  .header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    font-style: times new roman;
+  }
+
+  .logo{
+    width: 30%;
+    line-height: 80px;
+    text-align: center;
+    background-color: beige;
+    float: left;
+    font-style: times new roman;
+  }
+
+  .menu{
+        width: 70%;
+        line-height: 80px;
+        background-color: beige;
+        float: right;
+  }
+
+  ul{
+    list-style: none;
+    text-align: right;
+   /* direction: rtl; */
+   font-style: times new roman;
+  }
+
+  li{
+    display: inline-block;
+   /* border: 1px solid brown; */
+    padding: 0 10px;
+
+  }
+
+  p{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightskyblue;
+    overflow: auto;
+    font-style: times new roman;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 16.66%;
+    padding: 15px;
+    
+    border-radius: 4px;
+   border: 2px solid #52689b35;
+    text-align: center;
+    ;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
