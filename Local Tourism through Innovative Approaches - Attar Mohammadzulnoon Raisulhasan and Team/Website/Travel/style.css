@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.bt1
+{
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+    
+}
+#slider{
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#slider figure {
+    position: relative;
+    width:500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+
+
+.container2{
+    width:auto; 
+    margin: 50px auto;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-flow: stretch;
+}
+.card{
+    width: 20%;
+    background: white;
+    border:1px solid #ccc;
+    margin-bottom: 50px;
+    transition:0.3s;
+    display:block;
+    text-decoration: none;
+    
+
+
+}
+.cardHeader{
+    text-align: center;
+    padding:50px 10px;
+    background: linear-gradient(to right,#ff416c,#ff4b2b);
+    color: white;
+    text-decoration: none;
+    
+    
+
+}
+.cardBody{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    
+}
+.cardBody .btn{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right,#ff416c,#ff4b2b);
+    margin-top:30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0,0,0,0.25s);
+}
+@media screen and(max-width:1000px) {
+    .card{
+        width:40%
+    }
+}
+@media screen and(max-width:620px) {
+    .container{
+        width:100%;
+    }
+    .heading{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card{
+        width:80%
+    }
+}
