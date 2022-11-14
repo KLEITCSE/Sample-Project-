@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> BIDAR </title>
+    <meta name="description" content="Page description here" />
+    <meta http-equiv="Content-type" content="text/html" ; charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        
+        <ul class="nav-links">
+            <div style = "position:relative; left:0px ;"> <li class="active">
+                <a href="https://en.wikipedia.org/wiki/Bidar" target="_blank"> <h2>Bidar </h2> </a></li></div>
+                
+            <li class="active">
+                    <a href="#"></a></li>
+            <li class="active">
+                    <a href="#"></a></li>
+            <li class="active">
+                    <a href="#"></a></li>
+            <li class="active">
+                    <a href="#"></a></li>
+            <li class="active">
+                <a href="#"></a></li>
+
+            <li class="active">
+                <a href="#">Home</a></li>
+            <li class="active">
+                <a href="#gallery">Gallery</a></li>
+            <li class="active">
+                <a href="#explore">Explore</a></li>
+            <li class="active">
+                <a href="Untitled-1.html" target="_blank">About Us</a></li>
+        </ul>
+        <img src="./images/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+
+            <h2>Welcome to Bidar </h2>
+            <h1>DO COME & VISIT <span class="change_content"></span></h1>
+            <p text-align: center>"The City of Whispering Monuments and Crown Town"</p>
+            <a href="#information" class="ctn">Learn More</a>
+
+        </div>
+    </header>
+
+    <!-- Intro-->
+    <section class="intro">
+        <div class="title">
+            <h1>
+                <a id="information"></a>Information</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>Crown of Karnataka</h4>
+                <p>Bidar is a city in the north-eastern part of Karnataka state in India. It is the headquarters of Bidar District which borders Maharashtra and Telangana. The city is well known for its many sites of architectural, historical, and religious
+                    importance.
+                </p><br>
+                <p>Being located at the farthest of around 700 km (430 mi) from the state capital Bangalore, it has been neglected by the state government for a long time. However, owing to its rich heritage, the city has a prominent place on the Archaeological
+                    Map of India. Picturesquely perched on the Deccan plateau, the Bidar fort is more than 500 years old and still standing strong. According to the book "Bidar Heritage" published by the state Department of Archaeology, Museums, and Heritage,
+                    of the 61 monuments listed by the department, about 30 are tombs located in and around Bidar city., explaining its nickname, "City of Whispering Monuments".
+                </p><br>
+
+                <p>Bidar is home to the second-biggest Indian Air Force training center in the country. The IAF Station Bidar is used for advanced jet training of prospective fighter pilots on BAe Hawk aircraft. Bidar city is known for its Bidri handicraft
+                    products, and its rich history. Bidar is also considered one of the holiest places for Sikh pilgrimage. Unlike other places in the region, Bidar is the coldest and wettest place in north Karnataka.
+                </p><br>
+                <p>Geographically, it is surrounded by Kalaburagi district on the southern side, Telangana State on the eastern side and Maharashtra State on the western and the northern side. Bidąr is Karnataka’s northernmost district and is often referred
+                    to as ‘Crown’ of Karnataka.</p>
+               
+            </div>
+
+            <div class="col">
+                <h4>Location of Bidar in Karnataka</h4>
+                <img src="./images/location.jpeg" alt="">
+                <p>Coordinates (Bidar): 17.9°N 77.5°E[1]</p>
+            </div>
+        </div>
+    </section>
+    <!------Images Slider------>
+    <section>
+        <div class="title">
+            <h1>
+                <a id="gallery"></a>Gallery</h1>
+            <div class="line"></div>
+        </div>
+        <div class="slider-box">
+            <div id="slider">
+                <img src="img/i4.jpg" alt="">
+                <img src="img/i7.jpg" alt="">
+                <img src="img/b11.jpg" alt="">
+                <img src="img/i8.jpg" alt="">
+                <img src="img/i9.jpg" alt="">
+            </div>
+            <div class="indicators">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+                <span id="btn4"></span>
+                <span id="btn5"></span>
+
+
+            </div>
+        </div>
+
+
+        <script>
+            var slide = document.getElementById("slider");
+            var btn1 = document.getElementById('btn1');
+            var btn2 = document.getElementById('btn2');
+            var btn3 = document.getElementById('btn3');
+            var btn4 = document.getElementById('btn4');
+            var btn5 = document.getElementById('btn5');
+
+
+            btn1.onclick = function() {
+                slide.style.transform = "translateX(0px)";
+                btn1.classList.add('active');
+                btn2.classList.remove('active');
+                btn3.classList.remove('active');
+                btn4.classList.remive('active');
+                btn5.classList.remive('active');
+            };
+            btn2.onclick = function() {
+                slide.style.transform = "translateX(-100%)";
+                btn1.classList.remove('active');
+                btn2.classList.add('active');
+                btn3.classList.remove('active');
+                btn4.classList.remove('active');
+                btn5.classList.remove('active');
+            };
+            btn3.onclick = function() {
+                slide.style.transform = "translateX(-200%)";
+                btn1.classList.remove('active');
+                btn2.classList.remove('active');
+                btn3.classList.add('active');
+                btn4.classList.remove('active');
+                btn5.classList.remove('active');
+            };
+            btn4.onclick = function() {
+                slide.style.transform = "translateX(-300%)";
+                btn1.classList.remove('active');
+                btn2.classList.remove('active');
+                btn3.classList.remove('active');
+                btn4.classList.add('active');
+                btn5.classList.remove('active');
+            };
+            btn5.onclick = function() {
+                slide.style.transform = "translateX(-400%)";
+                btn1.classList.remove('active');
+                btn2.classList.remove('active');
+                btn3.classList.remove('active');
+                btn4.classList.remove('active');
+                btn5.classList.add('active');
+            };
+        </script>
+    </section>
+
+    <!-----------------History---------------------------->
+    <section>
+        <div class="title">
+            <h1>History</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4></h4>
+                <p>The recorded history of the city goes back to the third century B.C. when it was a part of the Mauryan Empire. After Mauryas, Satavahanas, Kadambas, and Chalukyas of Badami reigned over Bidar territory. The Delhi Sultanate invaded the
+                    area first by Allauddin Khilji, and later, Muhammed-bin-Tughluq took control of the entire Deccan. In the middle of the 14th century, the Sultan of Delhi's officers rebelled and this resulted in the establishment of Bahmanid Dynasty.</p><br>
+
+                <p> The history of the present fort at Bidar is attributed to the sultan Ala-ud-Din Bahman Shah, the first sultan of the Bahmani dynasty to 1427 when he shifted his capital from Gulbarga to Bidar since it had better climatic conditions and
+                    was also a fertile and fruit-bearing land. The earliest recorded history of its existence as a small and robust fort is also traced to prince Ulugh Khan in 1322, whereafter it came under the reign of the Tughlaq dynasty.</p>
+
+                <p> With the establishment of the Bahmanid dynasty (1347), Bidar was occupied by Sultan Ala-ud-Din Bahman Shah Bahmani. Bidar remained under the Barid Shahi dynasty until its conquest by the Bijapur Sultanate in 1619. He wrested the Bidar
+                    Fort from the Adil Shahis after a 21-day war in 1656. With this, Bidar became a part of the Mughal dynasty for the second time. Bidar was made a subah (imperial top-level province) in 1656, which Telangana Subah was merged into the
+                    next year.</p><br>
+                <p>
+                    In 1724, Bidar became a part of the Asaf Jahi Kingdom of the Nizams. Third son of Asaf Jah l (Nizam l) Mir Sa'id Muhammad Khan, Salabat Jang ruled from Bidar fort from 1751 to 1762, till his brother Mir Nizam Ali Khan Asaf Jah III imprisoned him in this
+                    fort, and was killed in Bidar fort on 16 September 1763. It was connected to Hyderabad by rail in the early 20th century. After India's independence, in 1956 all Kannada-speaking areas were merged to form the Mysore State and Bidar
+                    became part of the new Mysore (now Karnataka) state.
+                </p>
+                <p>The ancient Karez System in the city has been recently discovered. The Karez (Qanat) is an underground network of aqueducts for water supply. The Bidar Karez, built in the 15th century, is more than 3 km (1.9 mi) long with 21 air vents.
+                    Underground canals, built to connect underground water streams, were meant to provide drinking water to civilian settlements and the garrison inside the Bidar fort. This was necessary for a city where the soil was rocky and drilling
+                    wells was difficult.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------Popular  places---------------------------->
+    <section class="intro">
+        <div class="title">
+            <h1>
+                <a id="explore"></a>Popular Places</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>Bidar Fort</h4>
+                <p>Bidar Fort is considered one of the most formidable forts of the country. The main citadel complex housed the royal places. Mahals and Mosque. Adjoining to this on the southern side, the city was built for the people. Both the citadel
+                    complex and city had separate forts for protection the plan of the Bidar city fortification is pentagonal. There are five gateways for entry into the city fort. It is main citadel complex fort which is stronger. It is built on the
+                    brink of the plateau. Engineers and architecture of various countries were employed on its design and construction. A Museum is preset there having old armor, old sculptures. including many of the ancient stones</p>
+                  <br> <a href="fort.html" class="ctn">Know More</a>
+                
+            </div>
+           
+
+            <div class="col">
+                <h4></h4>
+                <img src="./images/b11.jpg" alt="Bidar fort">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>Solah Sutoon Ki Masjid</h4>
+                <p>Solah Sutoon Ki Masjid was built by Qubil Sultani between 1423 and 1424. The mosque derives its name from the 16 pillars that are lined in the front of the structure. Popularly known as the Zanana Masjid, this mosque is about 90 metres
+                    long and 24 metres wide. Behind the southern wall of this mosque, there is a large well. Characterised by columns, arches and domes, this mosque is one of the largest in India.</p>
+                    <br> <a href="solah.html" class="ctn">Know More</a>
+
+            </div>
+
+            <div class="col">
+                <h4></h4>
+                <img src="./images/Solah_Khamba_Mosque.jpg" alt="">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>Rangeen Mahal</h4>
+                <p>Rangeen Mahal, situated in the fort, near Gumbad Darwaza, is unique because of its decoration with coloured tiles and other art work. Wood carving done there is not only precious but also unique. The walls of Mahal are adorned with mother-of-pearl
+                    of the finest quality in laid in jet-black stone. Floral patterns and calligraphic text are also depicted here. Stone carving, stucco art are other attractions of this monument. It was rebuilt during Barid Shahi period. The design
+                    of this monument represents a blend of both Hindu and Muslim architecture. There are rooms in the basement of the Rangin Mahal</p>
+                    <br> <a href="rangeen.html" class="ctn">Know More</a>
+
+            </div>
+
+            <div class="col">
+                <h4></h4>
+                <img src="./images/rangen.jpg" alt="">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>Takht Mahal</h4>
+                <p>The Royal Palace, was built by Ahemd shah. It was the royal residence. The place was fully decorated with coloured titles and stone carvings part of which can be seen even today. It had two side royal pavilions with lofty arches and a
+                    spacious hall at the back of which was the sultan's room. The building had stately dimensions and exquisite surface decoration. The coronations of several Bahamanis and Barid Shahi sultans were held there. From the royal pavilion which
+                    is situated behind throne palace one can view the valley and low land below.</p>
+                    <br> <a href="takht.html" class="ctn">Know More</a>
+                
+            </div>
+
+            <div class="col">
+                <h4></h4>
+                <img src="./images/takhat.jpg" alt="">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>Gurudwara Nanak Jhira</h4>
+                <p>Gurudwara Nanak Jhira Saheb is known to be one of Holiest Place For Sikh Devotees in India and is believed that first sikh Guru Shri Guru Nanak Dev ji visited the place during famine in this region. Papa Nashini Mandir Dargah Hazrat Shah
+                    Shamsuddin Quadri (Multani Basha) Dargah Hazrat Syed Abul Faiz Mailar Mallana Mandir Narasimha Jharna Mandir Changleri Veerabhadra Mandir</p>
+                    <br> <a href="guru.html" class="ctn">Know More</a>
+               
+            </div>
+
+            <div class="col">
+                <h4></h4>
+                <img src="./images/nanak-jhira-sahib-gurudwara-bidar.jpg" alt="">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>Basavakalyan</h4>
+                <p>Located about 80km from Bidar, Basavakalyan was once the capital of the Kalyana Chalukyas and the centre of a great social and religious upheaval in the 12th century. Basavakalyan in Bidar district is famed for its cultural heritage and
+                    is known as the Karmabhoomi of Basaveshwara, the revered 12th century religious reformer. During his time, it became a seat of learning, and an abode of spiritual wisdom. Basavakalyan is renowned for the saints who made the city their
+                    home: Basaveshwara, Allama Prabhu, Akka-Mahadevi, Channabasavanna and Siddarama. You can also see some monuments like the Chaluckyan Fort, few caves, and other places of historic and religious importance here.</p>
+                    <br> <a href="basava.html" class="ctn">Know More</a>
+
+            </div>
+
+            <div class="col">
+                <h4></h4>
+                <img src="./images/b8.jpg" alt="">
+                <p></p>
+            </div>
+        </div>
+
+    </section>
+    <!-----------------End of Popular  places---------------------------->
+
+
+    <!-----------------Art---------------------------->
+    <section>
+        <div class="title">
+            <h1>Art</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>Bidri wares</h4>
+                <p>Bidriware, one of the rarest and most intricate art forms is now unique to the city. This native art form has obtained Geographical Indications (GI) registry. The various art forms created by artists from Bidar city centuries ago are now
+                    major attractions in museums such as Victoria and Albert Museum, London, the National Museum in New Delhi, and Indian Museum in Kolkata.</p><br>
+
+                <p> The Karnataka tableau at the 2011 Republic Day Parade at Rajpath in New Delhi featured Bidriware and Bidri artisans from Bidar. Rehaman Patel did extensive research in Bidri Art from Gulbarga University. His book in Kannada version (2012)
+                    and English version (2017) was also published on Bidri Art.</p><br>
+
+                <!---<p>All the dignitaries & guests of XIX Commonwealth Games 2010 were presented with mementos handcrafted in Bidri art. This art form is the Union government's choice for souvenirs at the World Economic Forum in Davos.
+                </p>-->
+
+
+            </div>
+
+            <div class="col">
+                <h5></h5>
+                <img src="./images/bidriware.jpg" alt="The Karnataka tableau depicting Bidriware Handicraft from Bidar passes through the Rajpath during the Republic Day Parade 2011">
+                <p>Karnataka tableau depicting Bidriware Handicraft from Bidar passes through the Rajpath during the Republic Day Parade 2011 in Delhi.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+ <!--================  how to reach =================-->
+
+    <section>
+        <div class="title">
+            <h1>How to Reach</h1>
+            <div class="line"></div>
+        </div>
+ 
+        <div class="row">
+            <div class="col">
+                <h4>By Train</h4>
+                <p>Bidar railway station has a Tourist Information Centre, computerized reservation counter, waiting room, light refreshment stall and tea stall. Bidar has connectivity with Bangaluru, Hyderabad, Sainagar Shirdi, Parbhani Jn,
+                     Aurangabad, Latur, Nanded, Manmad, Mumbai, Visakhapatnam, Machlipatnam, Vijayawada, Renigunta and Kalaburagi.</p>
+        </div>
+
+            <div class="col">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3796.43263881279!2d77.515347!3d17.911964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea66a854de56d150!2sBidar%20Railway%20Station!5e0!3m2!1sen!2sin!4v1660545599141!5m2!1sen!2sin" 
+                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>By Road</h4>
+                <p>Frequent KSRTC buses to Kalaburgi (Gulbarga), Hyderabad,
+                     Latur, Udgir, Nanded, Solapur, etc. Also volvo services to Bengaluru, Hubli, Belgavi, Davangere, Mumbai, Mangalore and Pune,  etc.</p>
+
+            </div>
+
+            <div class="col">
+                <h4></h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3796.2221847803353!2d77.507512!3d17.921788!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2db5f51c2aa5efd9!2sBidar%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1660545235825!5m2!1sen!2sin" 
+                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>By Air</h4>
+                
+                     <p>Bidar Airport also known as Bidar Air Force Station, is a military airbase and domestic airport in Chidri, Bidar, Karnataka, India. Bidar has been home to one of the oldest military air bases in south India.</p><br>
+                     <p>Bidar has its own airport with flight connection to Bengaluru. Hyderabad airport (149 kms away)
+                        is the next closest airport with excellent flight connectivity from all parts of India and abroad.</p><br>
+            </div>
+
+            <div class="col">
+                <h5></h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15186.408893052892!2d77.47963500000002!3d17.904044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cbaa8e69bab996e!2sBidar%20Airport!5e0!3m2!1sen!2sin!4v1660544563833!5m2!1sen!2sin" 
+                   width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+            </div>
+        
+        </div>
+     </section>
+
+    </section>
+
+    <!--================  Start Footer Area =================-->
+    <footer class="footer-area">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+
+
+
+                        <p>
+                            <a id="about"></a>
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved
+                            <p>Created by Team Shunya</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================ End Footer Area =================-->
+    </script>
+</body>
+
+</html>
