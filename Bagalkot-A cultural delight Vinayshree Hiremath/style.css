@@ -1,0 +1,96 @@
+<style>
+      *{
+        padding:0px;
+        margin:0px;
+        box-sizing:border-box;
+      }
+      .homepage{
+        background-image:url(homepage.jpg);
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size:cover;
+      }
+        .homepage {
+            
+            position: absolute;
+        }
+        .homepage2{
+            background-color: white;
+        }
+
+  
+       .first-txt {
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    font-weight: 900;
+    color: white;
+    font-size: 45px;
+}
+  
+        .second-txt {
+            position: absolute;
+    top: 30%;
+    font-size: 35px;
+    left: 550px;
+    color: black;
+    font-weight: 900;
+        }
+ .f-txt {
+    position: absolute;
+    top: 25px;
+    left: 450px;
+    font-weight: 900;
+    color: black;
+    font-size: 45px;
+}
+.third-text{
+    
+    top:10px;
+    left:200px;
+    font-weight:900;
+    color:black;
+    position: relative;
+    font-size:35px;
+}
+h2 {
+    font-size: 32px;
+    margin-left: 10%;
+    font-weight: 700;
+}
+h5{
+  font-size:32px;
+  font-weight:700;
+}
+
+  ul{
+    list-style:none;
+  }
+
+  ul  li{
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    float:left;
+    margin-left:10px;
+    background-color:blue;
+    width:100px;
+    text-align:center;
+    padding:10px;
+  }
+}
+  a{
+    color:white;
+    text-decoration:none;
+  }
+  li a:hover{
+    color:white;
+  }
+  li:hover {
+    background-color:blue;
+  }
+  
+
+  
+    </style>
+    
